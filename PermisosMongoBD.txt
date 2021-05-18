@@ -1,0 +1,26 @@
+db.createUser(
+  {
+    user: "admin",
+    pwd: "pass",
+    roles: [{role: "root", db: "admin" }]
+  }
+)
+
+db.auth("admin","pass")
+
+db.createUser(
+  {
+    user: "solo_lectura",
+    pwd: "pass",
+    roles: [{role: "read", db: "Estudiantes" }]
+  }
+)
+
+
+db.createUser(
+  {
+    user: "lectura_escritura",
+    pwd: "pass",
+    roles: [{role: "readWrite", db: "Estudiantes" }]
+  }
+)
