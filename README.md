@@ -58,38 +58,38 @@ Los demás archivos corresponden a la instalación de **`componentes de composer
 
 `mongod`
 
-## 🚀 Comandos Basicos Mongo
-**`Crear Instancia`**
+## 🚀 Comandos Basicos Mongo:
+**`Crear Instancia:`**
 
 
 docker run -d -p 27019:27017 --name mydatabase3 mongo
 
 
-**`Correr servicio`**
+**`Correr servicio:`**
 
 
 mongo localhost:27017
 
 
-**`Crear BD`**
+**`Crear BD:`**
 
 
 use store
 
 
-**`crear registro`**
+**`Crear registro:`**
 
 
 db.Estudiantes.insert({name: 'laptop'})
 
 
-**`Consultar Registro`**
+**`Consultar Registro:`**
 
 
 db.Estudiantes.find()
 
 
-**//Mongo php**
+**//Mongo php:**
 
 
 `<?php
