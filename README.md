@@ -60,27 +60,39 @@ Los demás archivos corresponden a la instalación de **`componentes de composer
 
 ## 🚀 Comandos Basicos Mongo
 **`Crear Instancia`**
+
+
 docker run -d -p 27019:27017 --name mydatabase3 mongo
 
 
 **`Correr servicio`**
+
+
 mongo localhost:27017
 
 
 **`Crear BD`**
+
+
 use store
 
 
 **`crear registro`**
+
+
 db.Estudiantes.insert({name: 'laptop'})
 
 
 **`Consultar Registro`**
+
+
 db.Estudiantes.find()
 
 
 **//Mongo php**
-<?php
+
+
+`<?php
   $connection = new Mongo( "mongodb://mydatabase3:27019" );
 
 
@@ -95,5 +107,5 @@ db.Estudiantes.find()
   foreach ($cursor as $doc) {
       var_dump($doc);
   }
-?>
+?>`
 
