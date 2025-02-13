@@ -29,3 +29,11 @@ El archivo: index.php, contiene una validación la cual verifica si existe el co
 El archivo: validarFormulario, contiene una función la cual verifica, en el SELECT si contiene un registro asociado sql, y su opción, en este caso si el género: Masculino es equivalente a la opción Masculino se elige el SELECT, o si el género fuera: Femenino este debe ser equivalente a la opción: Femenino para elegir el SELECT, la condición sirve para todos los sql asociados y opciones asociadas estáticamente.
 
 Los demás archivos corresponden a la instalación de componentes de composer. 
+
+# Comandos Para Cargar Proyecto:
+Servidor Mongo
+# mongo localhost:27017
+
+BD Mongo
+# mongod
+
