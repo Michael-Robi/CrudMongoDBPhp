@@ -39,22 +39,61 @@ Contiene los archivos: **`formulario.php, head.php, nav.php, tabla.php`**, encar
 ### 📂 Carpeta `public:`
 Contiene las carpetas: **bootstrap, datatables, fonts, y popper,** recursos estáticos del proyecto, necesarios para la presentación del archivo: **`tabla.php`**, se muestra en estilo: datatable de **Bootstrap 4**, el formulario, la barra de navegación, y los botones, se muestra con estilos de Bootstrap, la carpeta: **fonts**, corresponde a los iconos de la aplicación.
 
-### 📄 Carpeta `index.php`
+### 📄 Carpeta `index.php:`
 Contiene una validación la cual verifica si existe el controlador y su asociado método, si el método no se carga por **[GET]** se muestra la vista principal, cada método se relaciona con una acción estas son: **insertar, eliminar, modificar, editar, faker, vaciar.**
 
-### 📄 Carpeta `validarFormulario`
+### 📄 Carpeta `validarFormulario:`
 Contiene una función la cual verifica, en el **SELECT** si contiene un registro asociado **sql,** y su opción, en este caso si **el género: Masculino** es equivalente a la **opción: Masculino** se elige el **SELECT,** o si **el género fuera: Femenino** este debe ser equivalente a **la opción: Femenino** para elegir el **SELECT**, la condición sirve para todos los **sql** asociados y opciones asociadas estáticamente.
 
 Los demás archivos corresponden a la instalación de **`componentes de composer`**. 
 
-## 🚀 Comandos para Cargar el Proyecto
-**Servidor Mongo**
+## 🚀 Comandos para Cargar el Proyecto:
+**Servidor Mongo:**
 
 
 `mongo localhost:27017`
 
-**BD Mongo**
+**BD Mongo:**
 
 
 `mongod`
+
+## 🚀 Comandos Basicos Mongo
+**`Crear Instancia`**
+docker run -d -p 27019:27017 --name mydatabase3 mongo
+
+
+**`Correr servicio`**
+mongo localhost:27017
+
+
+**`Crear BD`**
+use store
+
+
+**`crear registro`**
+db.Estudiantes.insert({name: 'laptop'})
+
+
+**`Consultar Registro`**
+db.Estudiantes.find()
+
+
+**//Mongo php**
+<?php
+  $connection = new Mongo( "mongodb://mydatabase3:27019" );
+
+
+  $collection = $connection->selectCollection('db-name', 'collection-name');
+  if (!$collection) {
+          echo 'not connected to collection';
+          exit;
+  }
+
+  
+  $cursor = $collection->find();
+  foreach ($cursor as $doc) {
+      var_dump($doc);
+  }
+?>
 
