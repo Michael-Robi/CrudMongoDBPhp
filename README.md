@@ -43,7 +43,7 @@ Contiene las carpetas: **bootstrap, datatables, fonts, y popper,** recursos est�
 Contiene una validación la cual verifica si existe el controlador y su asociado método, si el método no se carga por **[GET]** se muestra la vista principal, cada método se relaciona con una acción estas son: **insertar, eliminar, modificar, editar, faker, vaciar.**
 
 ### 📄 Carpeta `validarFormulario`
-Contiene una función la cual verifica, en el **SELECT** si contiene un registro asociado sql, y su opción, en este caso si **el género: Masculino** es equivalente a la **opción: Masculino** se elige el **SELECT,** o si **el género fuera: Femenino** este debe ser equivalente a **la opción: Femenino** para elegir el **SELECT**, la condición sirve para todos los sql asociados y opciones asociadas estáticamente.
+Contiene una función la cual verifica, en el **SELECT** si contiene un registro asociado **sql,** y su opción, en este caso si **el género: Masculino** es equivalente a la **opción: Masculino** se elige el **SELECT,** o si **el género fuera: Femenino** este debe ser equivalente a **la opción: Femenino** para elegir el **SELECT**, la condición sirve para todos los **sql** asociados y opciones asociadas estáticamente.
 
 Los demás archivos corresponden a la instalación de **`componentes de composer`**. 
 
